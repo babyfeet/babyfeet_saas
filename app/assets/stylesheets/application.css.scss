@@ -17,10 +17,12 @@
 @import 'bootstrap-sprockets';
 @import 'bootstrap';
 
+// Typography styles
 h1, h2, h3, .navbar-brand {
     font-family: 'Roboto Slab', sans-serif;
 }
 
+// Background gradient
 .home-callout, .navbar {
   // Gradient provided by sum bby
   background: #2980b9; /* fallback for old browsers */
@@ -28,21 +30,13 @@ h1, h2, h3, .navbar-brand {
   background: linear-gradient(to left, #2980b9 , #2c3e50); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
-.navbar-default .navbar-brand {
+// Nav styles
+.navbar-default .navbar-nav > li > a, .navbar-default .navbar-brand {
     color: white;
-}
-
-.navbar-default .navbar-brand:hover {
-  color: whitesmoke;
-  opacity: 0.6;
-}
-.navbar-default .navbar-nav > li > a {
-    color: white;
-}
-
-.navbar-default .navbar-nav > li > a:hover {
-    color: whitesmoke;
-    opacity: 0.6;
+    &:hover {
+       color: whitesmoke;
+      opacity: 0.6;
+    }
 }
 
 .navbar {
