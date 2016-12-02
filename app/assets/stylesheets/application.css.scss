@@ -56,3 +56,14 @@ h1, h2, h3, .navbar-brand {
     padding-bottom: 100px;
     color: white;
 }
+
+.navbar-default .navbar-toggle .icon-bar{
+  background: white;
+}
+
+.navbar-default .navbar-toggle {
+  border: solid white 2px;
+  &:hover, &:focus {
+    background-color: #2980b9;
+  }
+}
