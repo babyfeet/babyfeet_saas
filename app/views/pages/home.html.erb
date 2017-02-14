@@ -1,22 +1,22 @@
 <div class="home-callout text-center container-fluid">
     <h2>Tere tulemast, Pind!</h2>
-    <h4>Kinnisvara on siin, Figaro seal</h4>
+    <h4>Armastus käib kodu kaudu.</h4>
 </div>
 <div class="container home-signup-links">
     <div class="row">
         <div class="col-md-6">
             <div class="well">
-                <h2 class="text-center">Basic membership</h2>
-                <h4>Sign up for free and get basic access to the community.</h4>
+                <h2 class="text-center">Basic member</h2>
+                <h4>Liitu tasuta ja saad ülevaate pakkumistest portaalis.</h4>
                 <br>
-                <%= link_to "Sign up to our Basic plan", "#", class: 'btn btn-primary btn-lg btn-block' %>
+                <%= link_to "Liitu tasuta", new_user_registration_path(plan: @basic_plan.id), class: 'btn btn-primary btn-lg btn-block' %>
             </div>
         </div>
         <div class="col-md-6">
             <div class="well">
-                <h2 class="text-center">Pro membership</h2>
-                <h4>Sign up for the Pro account for $10/month and get full access to the site and contact information.</h4>
-                   <%= link_to "Sign up to our Pro plan", "#", class: 'btn btn-success btn-lg btn-block' %>
+                <h2 class="text-center">Pro member</h2>
+                <h4>Liitu Pro kasutajaks 10€/kuu ja saad täieliku ligipääsu portaalile koos kontaktandmetega.</h4>
+                   <%= link_to "Sign up to our Pro plan", new_user_registration_path(plan: @pro_plan.id) , class: 'btn btn-success btn-lg btn-block' %>
             </div>
         </div>
     </div>

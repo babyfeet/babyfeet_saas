@@ -58,6 +58,11 @@ background: linear-gradient(to left, #F7971E , #FFD200); /* W3C, IE 10+/ Edge, F
     padding-bottom: 100px;
     color: white;
 }
+.divider {
+   margin-top: -20px;
+    padding-top: 34px;
+    color: black;
+}
 
 .navbar-default .navbar-toggle .icon-bar{
   background: white;
@@ -76,4 +81,14 @@ background: linear-gradient(to left, #F7971E , #FFD200); /* W3C, IE 10+/ Edge, F
 
 .home-signup-links {
   margin-top:30px;
+}
+
+.navbar-btn {
+   color: white;
+   font-weight: 600;
+    &:hover {
+       color: sky-blue;
+       opacity: 1;
+    }
+      opacity: 0.6;
 }
